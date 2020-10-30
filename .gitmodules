@@ -1,0 +1,3 @@
+[submodule "themes/hanworthy"]
+	path = themes/hanworthy
+	url = https://github.com/hantuzun/hanworthy.git
