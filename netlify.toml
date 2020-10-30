@@ -28,3 +28,13 @@ HUGO_VERSION = "0.76.5"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control: public, max-age=360000 
+  
