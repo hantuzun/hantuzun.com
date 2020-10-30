@@ -1,15 +1,16 @@
 ---
-draft: true
+# draft: true
 date: 2020-10-28T15:36:39+03:00
 lastmod: 2020-10-29T15:36:39+03:00
+slug: example
 title: "Blockchain, Cryptocurrencies and Distributed Ledger Technologies"
-slug: blockchain-cryptocurrencies-dlt
 series: The Science of Blockchain
 tags:
 - development
 - go
 - fast-execution
 - blogging
+hasMath: true
 ---
 
 This is the post summary. The posts begin with a summary that is written just after the TOML header. A special tag ` !--more--` in angle brackets is used to mark the end of summaries.
@@ -23,7 +24,16 @@ This is the post summary. The posts begin with a summary that is written just af
 
 ### Sidenotes
 
-I'm going through such a pain for the sake of sidenotes.{{% sidenote "sn-example" %}}This is a sidenote! Let's get this a little bit longer so we can see how it performs in multiple lines.{{% /sidenote %}} Then, we continue with a new sentence.
+I'm going through such a pain for the sake of sidenotes.{{% sidenote "sn-example" %}}
+This is a sidenote!
+{{% /sidenote %}}Then, we continue with a new sentence.
+
+### Marginnotes
+
+There's also marginnotes, notes without numbers.
+{{% marginnote "mn-example" %}}
+This is a margin note. Let's get this a little bit longer so we can see how it performs in multiple lines.
+{{% /marginnote %}}
 
 ### Tweets
 
@@ -42,6 +52,89 @@ Use the following syntax in double curly brackets for embedding tweets:
 ```
 < tweet $tweet_id >
 ```
+
+### $\LaTeX$ formulas!
+
+Some inline math:
+$e^{i \pi} = -1$ and \\(\sqrt{-1} = i \\)
+and \\( a_2 = 3 \\).
+
+And display math using escaped brackets `\\[`:
+\\[
+  -- \cdot_H -- \colon B(G,H) \times B(H, K)
+\\]
+
+**Supported TeX functions:**
+
+We use KaTeX for displaying formulas. The current version included is `0.12.0`.
+
+Note to myself: As new versions are created, update the library and this section.
+
+Here's the supported $\LaTeX$ subset of KaTeX: https://katex.org/docs/support_table.html
+
+Backup: https://katex.org/docs/0.12.0/support_table.html
+
+Make sure to have the following attribute to break long URLs like these.
+```css
+
+html {
+    word-wrap: break-word;
+}
+```
+
+### Newthoughts
+<span class="newthought">In his later books</span>, Tufte starts each
+section with a bit of vertical space, a non-indented paragraph, and the first few words of the sentence set in small caps.
+For this we use a span with the class `newthought`, as demonstrated at the beginning of this paragraph.
+
+### Figures
+
+Below, we have an example of a regular width figure:
+
+{{< figure
+  src="/images/posts/example/exports-imports.png"
+  class="class param"
+  title="The image title."
+  caption="This is the image caption."
+  label="mn-export-import"
+  attr="Image attribution"
+  attrlink="attribute link"
+  alt="alt"
+  link="link"
+ >}}
+{{< section "end" >}}
+
+Below, is a full-width figure:
+
+{{< figure
+  src="/images/posts/example/napoleons-march.png"
+  type="full"
+  label="mn-napoleonic-wars"
+  title="Napoleonic wars"
+  caption="This is the image caption."
+  attr="Image attribution"
+  attrlink="attribute link"
+  alt="Napoleonic wars"
+  link="link"
+ >}}
+{{< section "end" >}}
+
+And now we exhibit a margin figure:
+
+{{< figure
+  src="/images/posts/example/rhino.png"
+  type="margin"
+  class="class param"
+  label="mn-rhino"
+  title="The image title."
+  label="mn-export-import"
+  caption="This is the image caption."
+  attr="Image attribution"
+  attrlink="attribute link"
+  alt="alt"
+  link="link"
+ >}}
+{{< section "end" >}}
 
 ---
 
@@ -146,13 +239,13 @@ See the section on [`code`](#code).
 ### Images
 
 **.jpg:**
-![Example](/images/examples/han.jpg)
+![Example](/images/posts/example/han.jpg)
 
 **.png:**
-![Example](/images/examples/tron.png)
+![Example](/images/posts/example/tron.png)
 
 **.svg:**
-![Example](/images/examples/nikkei.svg)
+![Example](/images/posts/example/nikkei.svg)
 
 ### Escaping Characters
 To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (\\) in front of the character.
