@@ -3,8 +3,8 @@
 date: 2020-10-28T15:36:39+03:00
 lastmod: 2020-10-29T15:36:39+03:00
 slug: example
-title: "Blockchain, Cryptocurrencies and Distributed Ledger Technologies"
-series: The Science of Blockchain
+title: "Example Post: On Blockchains, Cryptocurrencies and More"
+series: The Science of Blockchains
 tags:
 - development
 - go
