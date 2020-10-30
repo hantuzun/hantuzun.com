@@ -36,5 +36,4 @@ HUGO_ENABLEGITINFO = "true"
     X-XSS-Protection = "1; mode=block"
   for = "/assets/*"
   [headers.values]
-    Cache-Control: public, max-age=360000 
-  
+    Cache-Control= "public, max-age=360000"
