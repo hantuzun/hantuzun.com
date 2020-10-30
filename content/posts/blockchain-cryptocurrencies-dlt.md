@@ -12,16 +12,42 @@ tags:
 - blogging
 ---
 
+This is the post summary. The posts begin with a summary that is written just after the TOML header. A special tag ` !--more--` in angle brackets is used to mark the end of summaries.
+
+ <!--more--> 
+ -----------
+
+ Continue writing with normal text after the summary. Do not forget to put the horizontal line by using `---`. This document is displaying the capabilities of this static site generator. Therefore, many headings are following.
+
+## Amazing features
+
+### Sidenotes
+
 I'm going through such a pain for the sake of sidenotes.{{% sidenote "sn-example" %}}This is a sidenote! Let's get this a little bit longer so we can see how it performs in multiple lines.{{% /sidenote %}} Then, we continue with a new sentence.
 
+### Tweets
 
-# Markdown Basics (h1)
+Tweets are displayed when JavaScript is disabled. If JavaScript is enabled, they're displayed in a card format by executing JavaScript from Twitter.
 
-Do not use h1 in your texts. h1 should be reserved for the titles only.
+Here's an example tweet: 
 
-## Heading level 2
+{{< tweet 1321860314661531648 >}}
 
-Heading level 2
+Here's an example of a tweet thread: 
+
+{{< tweet 1321833643355099138 >}}
+
+Use the following syntax in double curly brackets for embedding tweets:
+
+```
+< tweet $tweet_id >
+```
+
+---
+
+## Markdown Basics (h2)
+
+Do not use h1 (`#`) in your texts. h1 is reserved for the titles only.
 
 ### Heading level 3
 
@@ -35,7 +61,7 @@ Fortunately, there is another option supported by nearly every Markdown applicat
 
 ## Font styles
 
-A *cat* meow. Love **is** bold. This is really ***very*** important text.	
+A *cat* meow. Love **is**bold. This is really ***very***important text.	
 
 ## Blockquotes
 
@@ -57,28 +83,29 @@ Nested:
 Blockquotes can contain other Markdown formatted elements. Not all elements can be used — you’ll need to experiment to see which ones work.
 
 
-> #### The quarterly results look great!
+> **The quarterly results look great!**
 >
 > - Revenue was off the chart.
 > - Profits were higher than ever.
 >
 >  *Everything* is going according to **plan**.
 
-## Lists
+### Lists
 
-### Ordered lists
+**Ordered lists:**
 
 1. First item
 2. Second item
 
-### Unordered Lists
+**Unordered Lists:**
 
 - First item
 - Second item
 - Third item
 - Fourth item
 
-### Adding Elements in Lists
+**Adding Elements in Lists:**
+
 To add another element in a list while preserving the continuity of the list, indent the element four spaces or one tab, as shown in the following examples.
 
 Paragraphs
@@ -98,7 +125,7 @@ Paragraphs
 
 *   And here's the third list item.
 
-## Horizontal rule
+### Horizontal rule
 
 ---
 
@@ -108,7 +135,7 @@ Try to put a blank line before...
 
 ...and after a horizontal rule.
 
-## Links
+### Links
 My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
 
 ### Formatting links
@@ -116,35 +143,36 @@ I love supporting the **[EFF](https://eff.org)**.
 This is the *[Markdown Guide](https://www.markdownguide.org)*.
 See the section on [`code`](#code).
 
-## Images
+### Images
 
-### .jpg
+**.jpg:**
 ![Example](/images/examples/han.jpg)
 
-### .png
+**.png:**
 ![Example](/images/examples/tron.png)
 
-### .svg
+**.svg:**
 ![Example](/images/examples/nikkei.svg)
 
-## Escaping Characters
+### Escaping Characters
 To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (\\) in front of the character.
 
 \* Without the backslash, this would be a bullet in an unordered list.
 
-## HTML
+### HTML
 
 To use HTML, place the tags in the text of your Markdown-formatted file. Below is an example using em tags:
 
 This <em>em-word</em> is italic.
 
+---
 
-# Markdown Extensions
+## Markdown Extensions
 <!-- Source https://www.markdownguide.org/extended-syntax/ -->
 
-## Endnotes
+### Endnotes (TODO)
 
-Here's a simple[^bignote] footnote,[^another] and here's a longer one.[^bignote]
+Here's a simple[^bignote] footnote,[^another] and here's a longer one.[^bignote] Use sidenotes or margin notes unless you need to have a very long footnote. {{% sidenote "sn-example" %}}This is a sidenote!{{% /sidenote %}} As you can see the numberings of sidenotes and footnotes/endnotes are not designed to work together yet.
 
 [^another]: This is a first footnote.
 
@@ -156,7 +184,7 @@ Here's a simple[^bignote] footnote,[^another] and here's a longer one.[^bignote]
 
     Add as many paragraphs as you like.
 
-## Tables
+### Tables
 
 | Syntax      | Description |
 | ----------- | ----------- |
@@ -171,7 +199,7 @@ Alignment:
 | Paragraph   | Text        | And more      |
 
 
-## Syntax highlighting
+### Syntax highlighting
 
 ```json
 {
@@ -181,20 +209,20 @@ Alignment:
 }
 ```
 
-## Strikethrough
+### Strikethrough
 ~~The world is flat.~~ We now know that the world is round.
 
 
-## Task lists
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+### Task lists (TODO)
 
-## Emojis 😃
+- [x] All things that I've done
+- [ ] Removing dots from task lists
+
+### Emojis 😃
 
 🧘🏻‍♂️, 🌍, 🍞, 🚗, 📞, 🎉, ♥️,
 
-## Auto URL 
+### Auto URL 
 
 http://www.example.com
 
