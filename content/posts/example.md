@@ -35,9 +35,117 @@ There's also marginnotes, notes without numbers.
 This is a margin note. Let's get this a little bit longer so we can see how it performs in multiple lines.
 {{% /marginnote %}}
 
+### $\TeX$ formulas!
+
+Use `$ ... $` or `\\( ... \\)` for some inline math. For instance,
+$e^{i \pi} = -1$ where \\(\sqrt{-1} = i \\).
+
+The following syntax gets you blocks:
+```tex
+$$
+\boldsymbol{\sigma}_{t+1} \equiv \Upsilon(\boldsymbol{\sigma}_t, T)
+$$
+```
+
+$$
+\boldsymbol{\sigma}_{t+1} \equiv \Upsilon(\boldsymbol{\sigma}_t, T)
+$$
+
+If Markdown parsing is messing up your $\TeX$ formulas, capture the block in any kind of HTML tags, such as `tex`! Below is an example code and its output:
+
+```tex
+<tex>
+$$
+n(\mathfrak{I}, i) \equiv \begin{cases}
+() & \text{if} \quad \mathfrak{I} = \varnothing \\
+c(\mathfrak{I}, i) & \text{if} \quad \lVert c(\mathfrak{I}, i)\rVert < 32 \\
+\texttt{\small KEC}(c(\mathfrak{I}, i)) & \text{otherwise}
+\end{cases}
+$$
+</tex>
+```
+
+<tex>
+$$
+n(\mathfrak{I}, i) \equiv \begin{cases}
+() & \text{if} \quad \mathfrak{I} = \varnothing \\
+c(\mathfrak{I}, i) & \text{if} \quad \lVert c(\mathfrak{I}, i)\rVert < 32 \\
+\texttt{\small KEC}(c(\mathfrak{I}, i)) & \text{otherwise}
+\end{cases}
+$$
+</tex>
+
+TODO: Note that the equivalent parenthesis is problematic. 
+
+**Supported TeX functions:**
+
+We use $\KaTeX$ for displaying formulas. The current version included is `0.12.0`.
+
+Note to myself: As new versions are created, update the library and this section.
+
+Here's the supported $\TeX$ subset of $\KaTeX$: https://katex.org/docs/support_table.html
+
+Make sure to have the following attribute to break long URLs like these.
+```css
+
+html {
+    word-wrap: break-word;
+}
+```
+### Figures
+
+Below, we have an example of a regular width figure:
+
+{{< figure
+  src="/images/posts/example/exports-imports.png"
+  class="class param"
+  title="The image title."
+  caption="This is the image caption."
+  label="mn-export-import"
+  attr="Image attribution"
+  attrlink="https://www.pixsy.com/academy/image-user/correctly-attribute-images/"
+  alt="alt"
+ >}}
+{{< section "end" >}}
+
+Below, is a full-width figure:
+
+{{< figure
+  src="/images/posts/example/napoleons-march.png"
+  type="full"
+  label="mn-napoleonic-wars"
+  title="Napoleonic wars"
+  caption="This is the image caption."
+  attr="Image attribution"
+  attrlink="https://www.pixsy.com/academy/image-user/correctly-attribute-images/"
+  alt="Napoleonic wars"
+ >}}
+{{< section "end" >}}
+
+{{< figure
+  src="/images/posts/example/pepe.jpg"
+  type="margin"
+  class="class param"
+  label="mn-rhino"
+  caption="\"This isn't a pepe\""
+  label="mn-export-import"
+ >}}
+{{< section "end" >}}
+And now we exhibit a margin figure with this paragraph. Carefully place your newlines in this case because an unintended paragraph could cause the margin figure to displace.
+
+Margin figures could be useful for including unnecessary images such as memes .
+
+
+### Newthoughts
+
+<span class="newthought">In his later books</span>, Tufte starts each
+section with a bit of vertical space, a non-indented paragraph, and the first few words of the sentence set in small caps.
+For this we use a span with the class `newthought`, as demonstrated at the beginning of this paragraph.
+
+
 ### Tweets
 
-Tweets are displayed when JavaScript is disabled. If JavaScript is enabled, they're displayed in a card format by executing JavaScript from Twitter.
+Tweets are displayed when JavaScript is disabled. If JavaScript is enabled, they're displayed in a card format by executing JavaScript from Twitter. Do Not Track(DNT) is enabled.
 
 Here's an example tweet: 
 
@@ -53,88 +161,10 @@ Use the following syntax in double curly brackets for embedding tweets:
 < tweet $tweet_id >
 ```
 
-### $\LaTeX$ formulas!
+## YouTube videos
 
-Some inline math:
-$e^{i \pi} = -1$ and \\(\sqrt{-1} = i \\)
-and \\( a_2 = 3 \\).
-
-And display math using escaped brackets `\\[`:
-\\[
-  -- \cdot_H -- \colon B(G,H) \times B(H, K)
-\\]
-
-**Supported TeX functions:**
-
-We use KaTeX for displaying formulas. The current version included is `0.12.0`.
-
-Note to myself: As new versions are created, update the library and this section.
-
-Here's the supported $\LaTeX$ subset of KaTeX: https://katex.org/docs/support_table.html
-
-Backup: https://katex.org/docs/0.12.0/support_table.html
-
-Make sure to have the following attribute to break long URLs like these.
-```css
-
-html {
-    word-wrap: break-word;
-}
-```
-
-### Newthoughts
-<span class="newthought">In his later books</span>, Tufte starts each
-section with a bit of vertical space, a non-indented paragraph, and the first few words of the sentence set in small caps.
-For this we use a span with the class `newthought`, as demonstrated at the beginning of this paragraph.
-
-### Figures
-
-Below, we have an example of a regular width figure:
-
-{{< figure
-  src="/images/posts/example/exports-imports.png"
-  class="class param"
-  title="The image title."
-  caption="This is the image caption."
-  label="mn-export-import"
-  attr="Image attribution"
-  attrlink="attribute link"
-  alt="alt"
-  link="link"
- >}}
-{{< section "end" >}}
-
-Below, is a full-width figure:
-
-{{< figure
-  src="/images/posts/example/napoleons-march.png"
-  type="full"
-  label="mn-napoleonic-wars"
-  title="Napoleonic wars"
-  caption="This is the image caption."
-  attr="Image attribution"
-  attrlink="attribute link"
-  alt="Napoleonic wars"
-  link="link"
- >}}
-{{< section "end" >}}
-
-And now we exhibit a margin figure:
-
-{{< figure
-  src="/images/posts/example/rhino.png"
-  type="margin"
-  class="class param"
-  label="mn-rhino"
-  title="The image title."
-  label="mn-export-import"
-  caption="This is the image caption."
-  attr="Image attribution"
-  attrlink="attribute link"
-  alt="alt"
-  link="link"
- >}}
-{{< section "end" >}}
+You an embed YouTube videos. Privacy enhanced mode is used.
+{{< youtube ZJthWmvUzzc >}}
 
 ---
 
@@ -265,17 +295,19 @@ This <em>em-word</em> is italic.
 
 ### Endnotes (TODO)
 
-Here's a simple[^bignote] footnote,[^another] and here's a longer one.[^bignote] Use sidenotes or margin notes unless you need to have a very long footnote. {{% sidenote "sn-example" %}}This is a sidenote!{{% /sidenote %}} As you can see the numberings of sidenotes and footnotes/endnotes are not designed to work together yet.
+Use sidenotes or margin notes unless you need to have a very long footnote.{{% sidenote "sn-example" %}}Did you forget what a sidenote is?{{% /sidenote %}} However, you may need to use endnotes in some cases. For instance, I wanted to include an elegant piece of code at the following endnote.[^bignote] As you can see the numberings of sidenotes and endnotes are not working in harmony yet.
 
-[^another]: This is a first footnote.
+[^bignote]: Let's have a function to calculate the Fibonacci series here.
 
-[^bignote]: Here's one with multiple paragraphs and code.
+    ```clojure
+    (def fib-seq
+        (lazy-cat [0 1] (map + (rest fib-seq) fib-seq)))
 
-    Indent paragraphs to include them in the footnote.
+    user> (take 15 fib-seq)
+    (0 1 1 2 3 5 8 13 21 34 55 89 144 233 377)
+    ```
 
-    `{ my code }`
-
-    Add as many paragraphs as you like.
+    From WikiBooks [Clojure Programming](https://en.wikibooks.org/wiki/Clojure_Programming/Examples/Lazy_Fibonacci).
 
 ### Tables
 
@@ -286,10 +318,10 @@ Here's a simple[^bignote] footnote,[^another] and here's a longer one.[^bignote]
 
 Alignment:
 
-| Syntax      | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| <-     | x      | ->     |
+| :---   | :----: | ---:   |
+| Orange | Fig    | Banana |
+| Plum   | Pear   | Kiwi   |
 
 
 ### Syntax highlighting

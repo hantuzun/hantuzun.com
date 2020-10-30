@@ -4,9 +4,6 @@ theme = "hanworthy"
 enableRobotsTXT = true
 paginate = 7 # Set the number of posts to show before overflowing to the next page.
 
-# Add your Google Analytics identifier: UA-XXXXXXXX-X
-googleAnalytics = "" 
-
 [taxonomies]
   series = "series"
   tag = "tags"
@@ -51,15 +48,9 @@ lastmod = ["lastmod"]
 
 # Privacy configurations: https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-    disable = false
-    respectDoNotTrack = true
-    useSessionStorage = false
   [privacy.twitter]
     disable = false
     enableDNT = true
-    simple = false
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
