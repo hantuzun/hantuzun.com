@@ -1,5 +1,5 @@
 ---
-# draft: true
+draft: true
 date: 2020-10-28T15:36:39+03:00
 lastmod: 2020-10-29T15:36:39+03:00
 slug: example
