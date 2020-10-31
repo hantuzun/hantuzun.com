@@ -1,18 +1,15 @@
 ---
-title: "The Science of Blockchains"
-series: "🔭 The Science of Blockchains"
-date: 2020-10-31T23:26:59+03:00
-draft: false
----
-
-+++
+title = "The Science of Blockchains"
+series = "🔭 The Science of Blockchains"
+date = 2020-10-31T23:26:59+03:00
+draft = false
 [twitter]
   card = "summary_large_image"
   creator = "@hantuzn"
   title = "🔭 The Science of Blockchains"
   description = "A blog series based around fundamental papers."
-  image = "https://example.com/great-picture.jpg"
-+++
+  image = "https://hantuzun.com/images/posts/the-science-of-blockchains/cover.jpg"
+---
 
 ![Cover](/images/posts/the-science-of-blockchains/cover.jpg)
 
