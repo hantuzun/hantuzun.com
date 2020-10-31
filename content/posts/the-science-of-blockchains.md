@@ -1,19 +1,85 @@
 ---
 title: "The Science of Blockchains"
-# slug: example
-# title: "Example Post: On Blockchains, Cryptocurrencies and More"
-series: The Science of Blockchains
+series: "🔭 The Science of Blockchains"
 date: 2020-10-31T23:26:59+03:00
 draft: false
 ---
 
++++
+[twitter]
+  card = "summary_large_image"
+  creator = "@hantuzn"
+  title = "🔭 The Science of Blockchains"
+  description = "A blog series based around fundamental papers."
+  image = "https://example.com/great-picture.jpg"
++++
+
+![Cover](/images/posts/the-science-of-blockchains/cover.jpg)
+
+I'm starting my blog with a blog series to celebrate the 12th anniversary of the Bitcoin white paper. 🎂
+
+I'll introduce an extensive technical foundation to comprehend Bitcoin, Ethereum, and the future of blockchains.
+
+The series is based on selected fundamental papers.
 
  <!--more--> 
  -----------
 
-## The Science of Blockchains
+## Why I Start This Series?
 
-I'm proud to present you 66 primary sources on the science of blockchains. Wish me luck covering some of them in this blog series!
+I like to have a comprehension of the primary sources when learning about a subject.
+
+When I've been teaching at [@BlockchainOkulu](https://twitter.com/blockchainokulu), I structured my lessons around primary sources such as the Bitcoin white paper and the Ethereum yellow paper.
+
+This way, my students learned not only what I know, but also what's the source of the knowledge. Now that they're graduated, they know where to look for when they have questions.
+
+Even though the course was four weeks long for each batch I could not answer some excellent questions in detail. Instead, I had to resort to black boxes many times.
+
+How do digital signatures work? A black box. 
+
+What about ZK-STARKs? Another black box.
+
+Black boxes help to teach a subject. Not so much for understanding in detail.
+
+To understand Bitcoin, Ethereum, and more on a deeper level, one should know the pillars they are built on.
+
+You understand the strength of the Bitcoin network when you know how does SHA-256 work.
+
+You understand how your contracts run once you know the inner-working of the EVM.
+
+You understand the security of the protocols you invest in when you, well, know a lot.
+
+One must have a comprehensive understanding of these technologies to take part in the conversations on their governance.
+
+We have *some* highly meritocratic communities in the blockchain space.
+
+What should be the block size?
+
+What're your opinions on various layer 2 protocols?
+
+How can you help us approaching the open questions on scalability?
+
+All you need to do is to join the conversations, as long as you know about the subject in depth.
+
+Here comes a problem: I realized the most technical questions are getting little to no attention.
+
+My ultimate goal is to have new voices on the future of blockchain governances. New voices that understand the contemporary subjects about blockchains inside and out.
+
+This is one of the best things I can do for crypto.
+
+{{< tweet 1299500501604667396 >}}
+
+## Intended Audience
+
+The series will require the reader to be comfortable with computer science papers. In fact, the content will be the papers.
+
+My job is to curate the papers, explain their contexts in the blockchain space, and clarify them with my reading notes.
+
+Ultimately, the series will offer a fundamental understanding of blockchain technologies to eager readers, be it economics students or CS professors.
+
+## The Papers
+
+I'm proud to present you 67 primary sources on the science of blockchains. Wish me plenty of free time for covering some of them in this blog series!
 
 ### Cryptography
 
@@ -39,6 +105,9 @@ I'm proud to present you 66 primary sources on the science of blockchains. Wish 
 - Bernstein D. J. 2006. Curve25519: new Diffie-Hellman speed records; https://cr.yp.to/ecdh/curve25519-20060209.pdf.
 
 - Brown D. R. L. 2010. SEC 2: Recommended Elliptic Curve Domain Parameters; https://www.secg.org/sec2-v2.pdf.
+
+- Kate, A. et al. 2010. Constant-Size Commitments to Polynomials and
+Their Applications; https://www.iacr.org/archive/asiacrypt2010/6477178/6477178.pdf.
 
 - Wang D. 2014. Secure Implementation of ECDSA Signatures in Bitcoin; http://www.nicolascourtois.com/bitcoin/thesis_Di_Wang.pdf.
 
@@ -175,6 +244,8 @@ I'm proud to present you 66 primary sources on the science of blockchains. Wish 
 - Bonneau, J. et al. 2020. Mina: Decentralized Cryptocurrency at Scale; https://minaprotocol.com/static/pdf/technicalWhitepaper.pdf.
 
 
-## Help me prioritize
+## Help Me Prioritize
 
-I'm not going to write this series in any order. Let me know which papers do you want to read first in replies :) I may built some kind of voting for this later on.
+Let me know which papers do you want to read first in Twitter! I may built some kind of voting for this later on.
+
+Reply to this thread: 
