@@ -248,7 +248,7 @@ I'm proud to present you 67 primary sources on the science of blockchains. Wish 
 - Bonneau, J. et al. 2020. Mina: Decentralized Cryptocurrency at Scale. [📃](https://minaprotocol.com/static/pdf/technicalWhitepaper.pdf)
 
 
-## Help Pick Papers
+## Priority Requests!
 
 Let me know which papers would you like to read first in Twitter. Please reply to this thread: 
 
