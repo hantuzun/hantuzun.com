@@ -36,7 +36,7 @@ When I've been teaching at [@BlockchainOkulu](https://twitter.com/blockchainokul
 
 This way, my students learned not only what I know, but also what's the source of the knowledge. Now that they're graduated, they know where to look for when they have questions.
 
-Even though the course was four weeks long for each batch I could not answer some excellent questions in detail. Instead, I had to resort to black boxes many times.
+Even though the course was four weeks long for each batch I could not answer some excellent questions in detail. Instead, I had to resort to black boxes.
 
 How do digital signatures work? A black box. 
 
@@ -52,9 +52,9 @@ You understand how your contracts run once you know the inner-working of the EVM
 
 You understand the security of the protocols you invest in when you, well, know a lot.
 
-One must have a comprehensive understanding of these technologies to take part in the conversations on their governance.
+Thus, as you understand these subjects, you will realize how important blockchain really is. You will probably want to contribute to these exciting projects.
 
-We have *some* highly meritocratic communities in the blockchain space.
+The more you will know, the more you will be able to participate in the governance of blockchains.
 
 What should be the block size?
 
@@ -64,9 +64,11 @@ How can you help us approaching the open questions on scalability?
 
 All you need to do is to join the conversations, as long as you know about the subject in depth.
 
-Here comes a problem: I realized the most technical questions are getting little to no attention.
+I recently realized that the most technical issues are getting the least participation.
 
-My ultimate goal is to have new voices on the future of blockchain governances. New voices that understand the contemporary subjects about blockchains inside and out.
+Then, I decided to create this blog series with the goal of  having new voices on the future of blockchain governances.
+
+New voices that understand the contemporary issues very well.
 
 This is one of the best things I can do for crypto.
 
@@ -74,7 +76,7 @@ This is one of the best things I can do for crypto.
 
 ## Intended Audience
 
-The series will require the reader to be comfortable with computer science papers. In fact, the content will be the papers.
+The series will demand the reader to be comfortable with computer science papers. In fact, the content will be the papers.
 
 My job is to curate the papers, explain their contexts in the blockchain space, and clarify them with my reading notes.
 
@@ -246,8 +248,8 @@ I'm proud to present you 67 primary sources on the science of blockchains. Wish 
 - Bonneau, J. et al. 2020. Mina: Decentralized Cryptocurrency at Scale. [📃](https://minaprotocol.com/static/pdf/technicalWhitepaper.pdf)
 
 
-## Help Me Prioritize
+## Help Pick Papers
 
-Let me know which papers do you want to read first in Twitter! I may built some kind of voting for this later on.
+Let me know which papers would you like to read first in Twitter. Please reply to this thread: 
 
-Reply to this thread: 
+{{< tweet 1322710239653875712 >}}
