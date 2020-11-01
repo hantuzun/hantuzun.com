@@ -3,20 +3,18 @@ title = "The Science of Blockchains"
 series = "🔭 The Science of Blockchains"
 date = 2020-10-31T23:26:59+03:00
 draft = false
-
-[twitter]
-  card = "summary_large_image"
-  creator = "@hantuzn"
-  title = "🔭 The Science of Blockchains"
-  description = "A blog series based around fundamental papers."
-  image = "https://hantuzun.com/images/posts/the-science-of-blockchains/cover.jpg"
-
 og_title = "🔭 The Science of Blockchains"
 og_description = "A blog series based around fundamental papers."
 og_image = "https://hantuzun.com/images/posts/the-science-of-blockchains/cover.jpg"
 og_image_type = "image/jpg"
 og_image_width = 1400
 og_image_height = 600
+[twitter]
+  card = "summary_large_image"
+  creator = "@hantuzn"
+  title = "🔭 The Science of Blockchains"
+  description = "A blog series based around fundamental papers."
+  image = "https://hantuzun.com/images/posts/the-science-of-blockchains/cover.jpg"
 +++
 
 ![Cover](/images/posts/the-science-of-blockchains/cover.jpg)
