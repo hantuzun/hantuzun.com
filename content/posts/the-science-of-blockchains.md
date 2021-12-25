@@ -11,7 +11,7 @@ og_image_width = 1400
 og_image_height = 600
 [twitter]
   card = "summary_large_image"
-  creator = "@hantuzn"
+  creator = "@0xTuzun"
   title = "🔭 The Science of Blockchains"
   description = "A blog series based around fundamental papers."
   image = "https://hantuzun.com/images/posts/the-science-of-blockchains/cover.jpg"
