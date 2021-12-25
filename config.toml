@@ -45,6 +45,11 @@ lastmod = ["lastmod"]
 	identifier = "subscribe"
 	url = "https://hantuzun.substack.com/subscribe"
 	weight = 1
+[[menu.main]]
+  name = "Twitter"
+  identifier = "twitter"
+  url = "https://twitter.com/0xTuzun"
+  weight = 2
 
 # Privacy configurations: https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
