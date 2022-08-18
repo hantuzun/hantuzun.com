@@ -72,8 +72,6 @@ New voices that understand the contemporary issues very well.
 
 This is one of the best things I can do for crypto.
 
-{{< tweet 1299500501604667396 >}}
-
 ## Intended Audience
 
 The series will demand the reader to be comfortable with computer science papers. In fact, the content will be the papers.
